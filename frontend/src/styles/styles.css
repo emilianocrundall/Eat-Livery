@@ -1,0 +1,975 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.app_container{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 10% 60% 30%;
+}
+/* modal */
+.custom_modal .modal-content{
+    background-color: #292929;
+    color: white
+}
+.custom_modal .modal-content .full_btn,
+.custom_modal .modal-content .full_btn_d{
+    width: 100%
+}
+#add_modal{display: inline-flex;}
+#add_modal p{
+    text-align: left!important;
+    float: left
+}
+#span_btn{cursor: pointer;}
+/* login and register forms */
+.go_back button{
+    background: transparent;
+    color: #F15201;
+    transition: 0.3s;
+    font-size: 30px;
+    border: none
+}
+.go_back button:hover{
+    transition: 0.3s;
+    color: #D0C4B4;
+}
+.form_container{
+    grid-column: 1/4;
+    background-color: #474747;
+    min-height: 100vh;
+}
+.form_container form{margin-top: 4%;}
+.form_body{
+    padding: 30px;
+    background-color: #292929;
+    width: 40%;
+    margin: auto;
+}
+.form_body h3{font-weight: normal;}
+.form_body .form-group label{
+    text-align: right;
+    clear: both;
+    float:left;
+    color: white;
+    margin: 8px;
+    width: 30%;
+    font-weight: lighter;
+}
+#with_label{width: 65%}
+.custom_input{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #D0C4B4;
+    background-color: #474747;
+    color: white;
+    padding: 8px;
+}
+.custom_input:focus{
+    border-bottom: 2px solid #F15201;
+    outline: none;
+}
+.form_body button{
+    margin-top:6px;
+    width: 100%!important
+}
+.form_body p{
+    color: #D0C4B4;
+    text-align: right;
+}
+.ctm_link{
+    color: #F15201;
+    border: none;
+    background: transparent;
+}
+.ctm_link:hover{color: #f58147}
+.display_error{
+    width: 100%;
+    margin-top: 6px; 
+    background-color: #F15201;
+    border-radius: 20px;
+    padding: 10px 18px 10px 18px;
+    text-align: center;
+    color: white
+}
+::-webkit-calendar-picker-indicator {filter: invert(1);}
+/* side menu styles  */
+.side_menu{
+    width: 10%;
+    position: fixed;
+    grid-column: 1;
+    height: 100vh;
+    padding: 8px;
+    background-color:#292929;
+}
+.side_menu nav ul{
+    list-style: none;
+    margin:0;
+    padding: 0
+}
+.side_menu nav ul li, .side_menu nav{padding: 15px}
+.nav_link{
+    background: transparent;
+    padding: 6px;
+    font-size: 30px;
+    border: none;
+    color: #f58147;
+    transition: 0.3s;
+}
+.nav_link:hover{
+    text-decoration: none;
+    transition: 0.3s;
+    color: #D0C4B4
+}
+/* modal */
+.custom_modal .modal-content{
+    background-color: #292929;
+}
+.btn_cont{
+    padding: 20px;
+    width: 100%
+}
+
+.full_btn, .full_btn_d, .meal_action{
+    border: none;
+    color: white;
+    background-color: #F15201;
+    padding: 10px 18px 10px 18px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.btn_alt{
+    color: #F15201;
+    background: transparent;
+    border: 2px solid #F15201;
+    padding: 10px 18px 10px 18px;
+    border-radius: 20px;
+}
+.full_btn:hover, .meal_action:hover{
+    transition: 0.3s;
+    color: white;
+    text-decoration: none;
+    background-color: #f58147;
+}
+.full_btn:focus,
+.btn_alt:focus,
+.nav_link:focus,
+.go_back button:focus,
+.meal_action:focus,
+.mini_btn:focus,
+.cart_button:focus{
+    outline: none;
+}
+#first{
+    text-align: center;
+    float: left;
+    width: 48%
+}
+#last{
+    text-align: center;
+    float: right;
+    width: 48%
+}
+/* header styles */
+.header{
+    padding: 25px;
+    display: inline-flex;
+    width: 100%!important;
+    height: fit-content;
+}
+#header_image{height: 250px}
+.header button{
+    background: transparent;
+    color: #F15201;
+    border: none;
+    font-size: 25px;
+    border-radius: 25px;
+    transition: 0.3s;
+    padding: 2px 8px 2px 8px
+}
+.header button:hover{
+    transition: 0.3s;
+    color: white;
+    background-color: #F15201;
+}
+.header h3{color: #292929;}
+.content{
+    position: relative;
+    top: 35%
+}
+.content h3{
+    margin: 0;
+    display: inline-block;
+    color: white
+}
+.content button{float: left}
+/* dashboard styles  */
+.second_cont{
+    padding: 12px;
+    grid-column: 2/4;
+    background-color: white;
+    min-height: 100vh;
+    height: auto
+}
+.dash_link{
+    margin: auto;
+    width: 65%;
+    display: flex;
+    color: white;
+    border-radius: 20px;
+    height: fit-content;
+    text-align: center;
+    transition: 0.3s;
+}
+.dash_link img{
+    height: auto;
+    width: 50%;
+    float: left
+}
+.dash_link div{
+    height: auto;
+    width: 50%;
+    float: right;
+    background-color: #292929;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dash_link:hover{
+    color: #f58147;
+    transition: 0.3s;
+    text-decoration: none;
+}
+/* manage restaurant styles  */
+.manage_rest{
+    width: 100%;
+    padding: 20px;
+}
+.manage_rest .dark_ctm_btn{float: right!important}
+.dark_ctm_btn{
+    border: none;
+    color: white;
+    background-color: #292929;
+    padding: 10px 18px 10px 18px;
+    border-radius: 20px;
+    transition: 0.3s
+}
+.dark_ctm_btn:hover{
+    transition: 0.3s;
+    background-color: #474747;
+    text-decoration: none;
+    color: white
+}
+.manage_cont{
+    grid-column: 2/4;
+    padding: 12px;
+}
+/* table */
+.ctm_table{
+    margin: auto;
+    width: 94%
+}
+.ctm_table thead{background-color: #292929;}
+.ctm_table thead tr th{
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+.ctm_table tbody tr td{
+    text-align: center;
+    padding: 8px;
+    border: 2px solid #dddd
+}
+.td_img{width:70%!important;}
+.meal_action{
+    padding: 10px;
+    margin: 4px;
+    border-radius: 10px;
+}
+#delete{
+    width: 45%;
+    margin: 4px
+}
+
+/* category styles */
+.category_link{
+    width: 100%;
+    padding: 20px;
+    background: transparent;
+    border-bottom: 2px solid #dddd;
+    color: #292929;
+    display: block;
+    transition: 0.3s;
+    font-weight: bold;
+    font-size: larger;
+}
+.category_link:hover{
+    transition: 0.3s;
+    text-decoration: none;
+    color: #f58147;
+    border-bottom: 2px solid #f58147;
+}
+.rest_link{
+    width: 30%;
+    float: left;
+    margin: 10px;
+    text-align: center;
+    border-radius: 20px;
+    color: #292929;
+    font-weight: bolder;
+    background-color: #dddd;
+    transition: 0.3s;
+}
+.rest_link img{
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+.rest_link p{padding: 10px}
+.rest_link:hover{
+    transition: 0.3s;
+    color: #f58147;
+    text-decoration: none;
+}
+
+/* restaurant styles  */
+.second_cont_rest{
+    grid-column: 2;
+    background-color: white;
+    min-height: 100vh;
+    height: auto;
+    padding-bottom: 20px
+}
+
+.rest_info, .rest_links{
+    padding: 18px;
+    border-bottom: 2px solid #dddd;
+    align-items:center;
+    display: flex;
+}
+.rest_info nav{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+.rest_info nav ul{
+    padding: 0;
+    margin: 0
+}
+.rest_info nav ul li{
+    display: inline;
+    padding: 8px
+}
+.icon{
+    font-size: 25px;
+    color: #f58147;
+}
+.rest_info nav ul li span{
+    margin-left: 6px;
+    font-weight: bold;
+    color: #292929
+}
+.r_link{
+    width: 50%;
+    text-align: center;
+    color: #292929;
+    display: block;
+    font-weight: bold;
+    transition:0.3s;
+}
+.r_link:hover{
+    transition:0.3s;
+    color: #f58147;
+    text-decoration: none;
+}
+/* meal styles */
+.meal{
+    color: #292929;
+    width: 30%;
+    margin: 10px;
+    display: block;
+    float: left;
+}
+.meal img{width: 100%}
+.meal span{
+    width: 40%;
+    font-weight: bolder;
+    float: left;
+    padding: 6px 6px 0px 6px;
+}
+.meal p{
+    float: right;
+    padding: 6px 6px 0px 6px;
+}
+
+.mini_btn{
+    width: 100%;
+    padding: 6px;
+    color: white;
+    border: none;
+    background-color: #F15201;
+    transition: 0.3s
+}
+.mini_btn:hover{
+    transition: 0.3s;
+    background-color: #f58147;
+}
+.added_cont{
+    display: inline-block;
+    width: 100%;
+}
+.added_cont label{
+    font-weight: bolder;
+    margin: 4px;
+}
+.added_cont p{
+    width: 15%;
+    margin: 4px
+}
+.added input:focus, .tiny_btn:focus{outline: none;}
+.tiny_btn{
+    margin: 4px;
+    padding: 3px 8px 3px 8px;
+    color: white;
+    background-color: #F15201;
+    border: none;
+    transition: 0.3s;
+}
+.tiny_btn:hover{
+    background-color: #f58147;
+    transition: 0.3s;
+}
+/* order menu styles  */
+
+.order_details{
+    grid-row: 1;
+    grid-column: 3
+}
+.order_header{
+    background-color: #292929;
+    text-align: center;
+    color: white;
+    padding: 16px;
+    width: 100%;
+}
+
+.cart_item{
+    color: white;
+    background-color: #292929;
+    margin: auto;
+    padding: 8px;
+    margin-top: 8px;
+    width: 90%;
+    height: 45px
+}
+.cart_item p{float: left;}
+.cart_item span{float: right}
+.checkout{
+    position:fixed;
+    bottom:0px;
+    padding: 15px;
+    border-top: 2px solid #dddd;
+    width: 30%
+}
+.checkout button{width: 100%}
+.total{
+    bottom: 10%;
+    width: 30%;
+    position:fixed;
+    padding: 15px;
+    border-top: 2px solid #dddd
+}
+.total p{float: left}
+.total h4{float: right}
+
+/*  checkout styles  */
+.complete_order{
+    grid-column: 1/4;
+    background-color: #474747;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 15% 35% 35% 15%;
+    grid-template-rows: 18% 32% 32% 18%;
+}
+#check{grid-column: 2/4;}
+.complete_order_form{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    grid-column: 3;
+    grid-row: 2/4;
+    margin: auto;
+    background-color: #292929;
+}
+.complete_order form button{width: 100%}
+.items_ordered{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin: auto;
+    background-color: #dddd;
+    grid-column: 2;
+    grid-row: 2/4;
+}
+.items_ordered button{width: 100%}
+
+/* notifications styles*/
+.order_check_cont{
+    grid-column: 2/4;
+    height: 100vh
+}
+.order_check_cont h3{
+    color: #292929;
+    font-weight: normal;
+}
+#costumer_details{grid-column: 3}
+#costumer_details button{width: 45%}
+.status_form{
+    margin: 15px;
+    width: 100%
+}
+.status_form select{
+    margin: 4px;
+    width: 45%;
+    background-color: #292929;
+}
+.status_form button{margin: 4px}
+/* search component */
+
+.search_form{
+    width: 60%;
+    margin: 12px auto;
+}
+.search_form input{
+    width: 90%;
+    padding: 8px;
+    border: 2px solid #f58147;
+}
+.search_form input:focus{
+    outline: none;
+    border: 2px solid #F15201;
+}
+.search_form button{border-radius: 0%;}
+
+/* reviews component styles  */
+
+.comment_form{ margin: 16px;}
+.comment_form input{
+    padding: 8px;
+    border: 2px solid #f58147;
+    width: 90%
+}
+.comment_form input:focus{
+    outline: none;
+    border: 2px solid #F15201;
+}
+.review{
+    padding: 12px;
+    border-bottom: 2px solid #dddd;
+}
+.second_icon{
+    color: #F15201;
+    font-size: 16px;
+}
+.cart_button{
+    display: none;
+    position: fixed;
+    margin: 20px;
+    bottom: 12%;
+    right: 4%;
+    color: white;
+    padding: 15px;
+    border: none;
+    background-color: #F15201;
+    border-radius: 50%;
+}
+/* not found styles */
+.not_found{
+    width: 50%;
+    margin: auto;
+    padding: 20px
+}
+.not_found_icon{display: block;margin:auto;font-size: 60px;color: silver}
+/* ############### RESPONSIVE ################ */
+
+@media (min-width: 320px) and (max-width: 480px){
+    /* form and register components */
+    .go_back button{font-size: 20px;}
+    .form_body{
+        padding: 10px;
+        width: 90%;
+        margin: 10px auto;
+    }
+    .form_body h3{font-size: 20px;}
+    .custom_input{padding: 4px;}
+    .form_body .form-group label{margin: 5px;}
+    #with_label{width: 60%}
+
+    /* side menu styles  */
+
+    .side_menu{
+        width: 100%;
+        position: fixed;
+        grid-column: 1/4;
+        height: auto;
+        bottom: 0%;
+        padding: 6px;
+    }
+    .side_menu nav{
+        padding: 0;
+        height: auto;
+        text-align: center;
+        width: 100%;
+    }
+    .side_menu nav ul{
+        display: inline-block;
+        margin:0;
+        padding: 0
+    }
+    .side_menu nav ul li{display: inline;}
+    .nav_link{font-size: 20px;}
+    .full_btn, .full_btn_d, .meal_action, .btn_alt{
+        padding: 6px 12px 6px 12px;
+        font-size: 12px
+    }
+
+    /*   header component styles   */
+
+    .header{padding: 15px;}
+    #header_image{height: 150px}
+    .header button{font-size: 20px;}
+    .header h3{font-size: 20px;}
+    .content{
+        position: relative;
+        top: 35%
+    }
+    /* dashboard component styles  */
+
+    .second_cont{grid-column: 1/4;}
+    .dash_link{width: 95%;}
+    .dash_link div h4{font-size: 15px;}
+
+    /* manage restaurant styles  */
+
+    .manage_rest{padding: 20px;}
+    .dark_ctm_btn{
+        padding: 6px 12px 6px 12px;
+    }
+    .manage_cont{grid-column: 1/4;}
+
+    /* table components styles */
+
+    .ctm_table{width: 100%}
+    .ctm_table thead{background-color: #292929;}
+    .ctm_table thead tr th{padding: 5px;}
+    .td_img{width:95%!important;}
+    .meal_action{
+        padding: 6px;
+        margin: 2px;
+    }
+
+    /* category styles */
+
+    .category_link{
+        padding: 15px;
+        font-size: 15px;
+    }
+    .rest_link{
+        display: inline-block;
+        padding: 15px;
+        width: 100%;
+        float: none;
+        margin: 0;
+        border-radius: 0%;
+        border-bottom: 2px solid #dddd;
+        background: transparent;
+    }
+    .rest_link:hover{background: transparent;}
+    .rest_link img{
+        width: 40%;
+        float: left;
+        border-radius: 0%
+    }
+    .rest_link p{padding: 10px}
+
+    /* restaurant styles  */
+
+    .second_cont_rest{
+        grid-column: 1/4;
+        min-height: 100vh;
+        height: auto;
+        padding-bottom: 20%;
+    }
+    .second_cont_rest h4{font-size: 16px}
+    .rest_info, .rest_links{padding: 8px;}
+    .rest_info nav ul li{padding: 8px}
+    .icon{font-size: 20px;}
+
+    /* meal styles */
+
+    .meal{
+        width: 80%;
+        margin: 6px auto;
+        float: none;
+    }
+
+    /* order menu styles */
+
+    .cart_button{display: block}
+    .order_details{
+        grid-column: 1/4;
+        width: 100%;
+        height: 100vh;
+        display: none;
+        position: fixed;
+        background-color: white;
+    }
+    .order_header{padding: 10px;}
+    .cart_item{margin-top: 4px;}
+    .checkout{
+        position: absolute;
+        width: 100%
+    }
+    .checkout button{width: 100%}
+    .total{
+        width: 100%;
+        position: relative;
+        padding: 20px;
+    }
+
+    /*  checkout styles  */
+
+    .complete_order{
+        display: block;
+        padding-bottom: 20%;
+    }
+    .complete_order_form{
+        padding: 10px;
+        width: 100%
+    }
+    .items_ordered{
+        padding: 10px;
+        width: 100%
+    }
+    .items_ordered h4, .complete_order_form h4, .total_cart h5{font-size: 15px;}
+
+    /* notifications styles*/
+
+    .order_check_cont{
+        grid-column: 1/4;
+        height: 100vh;
+    }
+    #check{grid-column:1/4;}
+    .order_check_cont h3{
+        font-weight: normal;
+        font-size: 16px;
+    }
+    #costumer_details{width: 100%}
+    #costumer_details button{width: 45%}
+    .status_form{
+        margin: 15px;
+        width: 100%;
+    }
+    .status_form select{
+        margin: 4px;
+        width: 45%;
+    }
+
+    /* search component */
+
+    .search_form{
+        width: 90%;
+        margin: 8px auto;
+    }
+    .search_form input{
+        width: 80%;
+        padding: 2px;
+    }
+    .manage_cont h3{font-size: 16px;}
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    /* form and register components */
+
+    .go_back button{font-size: 25px;}
+    .form_body{
+        padding: 10px;
+        width: 70%;
+        margin: 10px auto;
+    }
+    .form_body h3{font-size: 25px;}
+    .custom_input{padding: 6px;}
+    .form_body .form-group label{margin: 5px;}
+    #with_label{width: 60%}
+    .full_btn, .full_btn_d, .meal_action, .btn_alt{
+        padding: 6px 12px 6px 12px;
+        font-size: 13px
+    }
+
+    /* side menu styles  */
+
+    .side_menu{padding: 5px;}
+    .side_menu nav ul{padding-top: 30px}
+    .side_menu nav ul li, .side_menu nav{padding: 0px}
+    .side_menu nav ul li{padding-bottom: 20px;}
+    .nav_link{
+        padding: 8px;
+        font-size: 23px;
+    }
+
+    /*   header component styles   */
+
+    .header{padding: 15px;}
+    #header_image{height: 200px}
+    .header button{font-size: 25px;}
+    .header h3{font-size: 25px;}
+    .content{
+        position: relative;
+        top: 35%
+    }
+    /* dashboard component styles  */
+    .dash_link{width: 75%;}
+    .dash_link div h4{font-size: 20px;}
+
+    /* table components styles */
+
+    .ctm_table{width: 100%}
+    .ctm_table thead{background-color: #292929;}
+    .ctm_table thead tr th{padding: 5px;}
+    .td_img{width:95%!important;}
+    .meal_action{
+        padding: 6px;
+        margin: 2px;
+    }
+    /* category styles */
+
+    .category_link{
+        padding: 15px;
+        font-size: 15px;
+    }
+     /* restaurant styles  */
+
+    .second_cont_rest{
+        grid-column: 2/4;
+        min-height: 100vh;
+        height: auto;
+    }
+    .second_cont_rest h4{font-size: 20px}
+    .rest_info, .rest_links{padding: 12px;}
+    .rest_info nav ul li{padding: 12px}
+
+    /* order details styles */
+
+    .icon{font-size: 20px;}
+    .cart_button{display:block}
+    .order_details{
+        grid-column: 2/4;
+        width: 100%;
+        height: 100vh;
+        display: none;
+        position: fixed;
+        background-color: white;
+    }
+    .cart_item{
+        margin-top: 4px;
+        font-size: 12px;
+        width: 95%
+    }
+    .checkout{
+        position: absolute;
+        width: 100%
+    }
+    .total{
+        width: 100%;
+        position: relative;
+        padding: 20px;
+    }
+    /* meal styles  */
+    .meal{
+        width: 47%;
+        margin: 4px;
+    }
+    .meal label{font-size: 12px}
+
+    /*  checkout styles  */
+    .complete_order{grid-template-rows: 14% 36% 36% 14%;}
+    #check{grid-column: 2/5;}
+    #check h4{font-size: 17px}
+    .complete_order_form{
+        padding: 10px;
+        grid-column: 3/5;
+    }
+    .items_ordered{
+        padding: 10px;
+        grid-column: 1/3;
+    }
+    /* notifications styles */
+    #costumer_details{grid-column:3/5}
+    .status_form{margin: 5px;}
+    .status_form p{padding:0!important}
+
+    /* search component */
+
+    .search_form{
+        width: 90%;
+        margin: 8px auto;
+    }
+    .search_form input{
+        width: 80%;
+        padding: 2px
+    }
+}
+@media (min-width:769px) and (max-width:1024px){
+    /* form styles */
+    .go_back button{font-size: 25px;}
+    .form_body{
+        padding: 10px;
+        width: 55%;
+        margin: 10px auto;
+    }
+    .full_btn, .full_btn_d, .meal_action, .btn_alt{
+        padding: 6px 12px 6px 12px;
+        font-size: 14px
+    }
+    /* side menu styles  */
+
+    .side_menu{padding: 5px;}
+    .side_menu nav ul{padding-top: 20px}
+    .nav_link{
+        padding: 8px;
+        font-size: 25px;
+    }
+    /* meal styles */
+    .meal p, .meal span{float: none}
+    /* order styles */
+    .total h4{font-size: 20px;}
+    .cart_item{
+        margin-top: 4px;
+        font-size: 12px;
+        width: 95%
+    }
+    /*  checkout styles  */
+
+    .complete_order{grid-template-rows: 12% 38% 38% 12%;}
+    #check h4{font-size: 20px}
+    .status_form{margin: 5px;}
+    .status_form p{padding:0!important}
+
+    /* search component */
+    .search_form input{
+        padding: 3px
+    }
+
+}
+@media (min-width:1025px) and (max-width:1135px){
+    .added_cont label{
+        margin: 0px;
+    }
+    .added_cont p{
+        width: 10%;
+        margin: 0px
+    }
+}
